@@ -35,7 +35,7 @@ export default function Admin({ fingerprint }: Props) {
   const handleLoginSuccess = (credentialResponse: any) => {
     setLoading(true);
     axios
-      .post(`${import.meta.env.VITE_BACKEND_URL}/google/webhook`, {
+      .post(`${import.meta.env.VITE_BACKEND_URL}google/webhook`, {
         ...credentialResponse,
         user_fingerprint: fingerprint
       })

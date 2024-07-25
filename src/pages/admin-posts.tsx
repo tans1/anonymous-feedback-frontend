@@ -40,7 +40,7 @@ export default function Posts({ fingerprint }: Props) {
       .get(
         `${
           import.meta.env.VITE_BACKEND_URL
-        }/user/post?user_fingerprint=${fingerprint}`,
+        }user/post?user_fingerprint=${fingerprint}`,
         { headers: getAuthHeader() }
       )
       .then((response) => {
