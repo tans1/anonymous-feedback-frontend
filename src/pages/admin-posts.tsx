@@ -54,7 +54,7 @@ export default function Posts({ fingerprint }: Props) {
   const createFeedback = () => {
     axios
       .post(
-        `${import.meta.env.VITE_BACKEND_URL}/post`,
+        `${import.meta.env.VITE_BACKEND_URL}post`,
         {
           content: description,
           title: title

@@ -18,7 +18,7 @@ export default function Admin({ fingerprint }: Props) {
     const storedToken = localStorage.getItem("token");
     if (storedToken && storedToken.length > 0) {
       axios
-        .get(`${import.meta.env.VITE_BACKEND_URL}/validate/token`, {
+        .get(`${import.meta.env.VITE_BACKEND_URL}validate/token`, {
           headers: { Authorization: `Bearer ${storedToken}` }
         })
         .then(() => {

@@ -31,7 +31,7 @@ export default function Users({ fingerprint }: Props) {
       .get(
         `${
           import.meta.env.VITE_BACKEND_URL
-        }/post/${postId}?user_fingerprint=${fingerprint}`,
+        }post/${postId}?user_fingerprint=${fingerprint}`,
         { headers: getAuthHeader() }
       )
       .then((response) => {
@@ -48,7 +48,7 @@ export default function Users({ fingerprint }: Props) {
       setCreatingComment(true);
       axios
         .post(
-          `${import.meta.env.VITE_BACKEND_URL}/comment`,
+          `${import.meta.env.VITE_BACKEND_URL}comment`,
           {
             content: newComment,
             user_fingerprint: fingerprint,
