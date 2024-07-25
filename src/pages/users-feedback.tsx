@@ -39,7 +39,7 @@ export default function Users({ fingerprint }: Props) {
         setComments(response.data["comments"]);
       })
       .catch(() => {
-        toast.error("Error during login:");
+        toast.error("Error during loading");
       });
   }, [fingerprint, postId]);
 
@@ -62,7 +62,7 @@ export default function Users({ fingerprint }: Props) {
           setComments(response.data.comments);
         })
         .catch(() => {
-          toast.error("Error during login:");
+          toast.error("Error during comment creation");
         })
         .finally(() => {
           setCreatingComment(false);

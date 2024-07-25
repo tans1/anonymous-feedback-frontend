@@ -66,7 +66,7 @@ export default function Posts({ fingerprint }: Props) {
         setPosts(response.data);
       })
       .catch(() => {
-        toast.error("Error fetching posts:");
+        toast.error("Error creating post");
       })
       .finally(() => {
         setDescription("");
