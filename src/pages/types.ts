@@ -1,7 +1,7 @@
 export type Comment = {
     id: string;
     content: string;
-    user_fingerprint: string; // You may want to use `string` for consistency
+    user_fingerprint: string; 
     post_id: string;
     created_at: string;
   }
@@ -9,7 +9,7 @@ export type Comment = {
 export type User = {
     id: string;
     email: string;
-    user_fingerprint: string; // You may want to use `string` for consistency
+    user_fingerprint: string; 
   }
   
 export type Post = {
